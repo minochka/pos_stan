@@ -1,0 +1,15 @@
+{% extends 'foundation/base.html' %}
+
+{% block title %}
+  DESCRITION
+{% endblock %}
+
+{% block content %}
+
+    {% for post in posts %}
+        <img src="{{ post.image.url }}">
+        <a href="{{ post.get_absolute_url }}" >{{ post.title }}</a>
+        </br>
+    {% endfor %}
+
+{% endblock %}

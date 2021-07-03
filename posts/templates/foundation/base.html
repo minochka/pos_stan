@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}">
+</head>
+<body>
+
+{% include 'foundation/navbar.html' %}
+
+{% block content %}
+{% endblock %}
+
+{% include 'foundation/footer.html' %}
+
+</body>
+</html>
